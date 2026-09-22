@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "secret",
+  "version": "${version}",
+  "name": "Secret",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/secret/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "ABC.secret.client.SecretDataGenerator"
+    ],
+    "client": [
+      "ABC.secret.client.SecretClient"
+    ],
+    "main": [
+      "ABC.secret.Secret"
+    ]
+  },
+  "mixins": [
+    "secret.mixins.json",
+    {
+      "config": "secret.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
