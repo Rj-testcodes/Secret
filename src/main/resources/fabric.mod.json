@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "Secret",
   "description": "",
-  "authors": [],
+  "authors": [RJ],
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/secret/icon.png",
